@@ -28,10 +28,16 @@ function draw() {
   pop();
 }
 
+function random(min) {
+  return (Math.random() + min);
+}
+
 function branch(len,wei,ang) {
   line(0, 0, 0, -len);
   translate(0,-len);
   strokeWeight(wei);
+
+  ang = ang + random(0.53);
   if (len > 4) {
     stroke(0, 191, 255);
     push();
