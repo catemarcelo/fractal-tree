@@ -37,26 +37,29 @@ function branch(len,wei,ang) {
   translate(0,-len);
   strokeWeight(wei);
 
-  ang = ang + random(0.53);
   if (len > 4) {
     stroke(0, 191, 255);
+    ang = ang + random(0.83);
     push();
       rotate(ang);
       branch(len * 0.7, wei * 0.7, ang * .9);
     pop();
 
     stroke(95, 158, 160);
+    ang = ang + random(0.83);
     push();
       rotate(-2*ang);
       branch(len * 0.7, wei * 0.7, ang * 1.2);
     pop();
 
     stroke(100, 200, 100);
+    ang = ang + random(0.83);
     push();
       rotate(2*ang);
       branch(len * 0.3, wei * 0.7, ang * 1.1);
     pop();
 
+    ang = ang + random(0.83);
     push();
       rotate(-ang);
       branch(len * 0.3, wei * 0.7, ang * 1.15);
